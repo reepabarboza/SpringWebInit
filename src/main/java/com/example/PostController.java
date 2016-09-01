@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * Created by pradeep on 06-06-2016.
+ * Created by reepa on 06-06-2016.
  */
 @Controller
 @RequestMapping("/posts")
@@ -21,7 +21,7 @@ public class PostController {
 
         String name = null;
         model.addAttribute("greeting", "hello");
-        if(name == null) throw new NullPointerException("Exception null one");
+        //if(name == null) throw new NullPointerException("Null Exception");
         return "list";
     }
 
